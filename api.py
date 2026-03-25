@@ -5,7 +5,7 @@ import torch
 
 app = FastAPI()
 
-MODEL_PATH = "selimhafez/review_bert_model"
+MODEL_PATH = "selimhafez/review-bert-model"
 
 model = DistilBertForSequenceClassification.from_pretrained(MODEL_PATH)
 tokenizer = DistilBertTokenizer.from_pretrained(MODEL_PATH)
